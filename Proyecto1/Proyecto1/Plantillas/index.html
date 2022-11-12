@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django</title>
+</head>
+<body style="font-family: sans-serif; background-color: rgba(34, 33, 33, 0.89); color: rgb(214, 214, 214);">
+
+    {% include 'Superior/barra.html' %}
+    <br>
+    <h1 style="text-align: center;">APRENDIENDO <span style="color: lightgreen;">DJANGO</span></h1>
+    <h3>Saludos, {{nombre_entrada}} {{apellido_entrada}}</h3>
+
+    <h2>FECHA Y HORA ACTUALES</h2> 
+    <p style="color: lightgreen;">{{fecha_actual}}</p>
+
+    <h2>D&Iacute;AS DE LA SEMANA</h2>
+    <p>
+        <ul>
+        {% for i in dias %}
+            {% if i == dia %}
+                <li style="color: lightgreen;">{{i}}</li>
+            {% else %}
+                <li>{{i}}</li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+    </p>
+</body>
+</html>

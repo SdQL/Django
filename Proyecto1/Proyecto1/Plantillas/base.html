@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>
+         {% block title %} {% endblock %}
+     </title>
+ </head>
+ <body style="font-family: sans-serif; background-color: rgba(34, 33, 33, 0.89); color: rgb(214, 214, 214); margin: 0; padding: 0; box-sizing: border-box;">
+
+     {% include 'Superior/barra.html' %}
+     <br>
+     <h1 style="text-align: center;">APRENDIENDO <span style="color: lightgreen;">DJANGO</span></h1>
+     <h4 style="text-align: center;">"Soy Samuel Cañas y estoy apreniendo a utilizar Django"</h4>
+
+     {% block content %}
+
+     {% endblock %}
+
+     
+
+ </body>
+ </html>
